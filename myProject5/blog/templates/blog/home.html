@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#1 Template Basics</title>
+</head>
+<body>
+    <h1>Template Basics</h1>
+    <p>Welcome to the blog Page!</p>
+
+    <!-- Single variable -->
+
+    <p>Name: {{name}}</p>
+    <p>Age: {{age}}</p>
+
+    <!-- List Access -->
+    <p>First Skills: {{skills.0}}</p>
+    <p>Skills: {{skills}}</p>
+
+    <!-- Object Attribute -->
+    <p>User Name:{{user.name}} </p>
+    <p>User Age:{{user.age}} </p>
+
+    <!-- Disct -->
+    <h2>Blog Info</h2>
+    <p>Title: {{blog.title}}</p>
+    <p>Content: {{blog.content}}</p>
+    <p>Created At: {{blog.created_at}}</p>
+
+    <p>Content: {{blog.content|safe}}</p>
+
+    <p>Author: {{blog.author.name}}</p>
+
+    <!--  -->
+
+
+</body>
+</html>
