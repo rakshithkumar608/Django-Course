@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} Home Page {% endblock  %}
+
+
+{% block content %}
+<h1>Welcome to Home Page</h1>
+<p>This is a Home Page</p>
+
+<img src="{% static 'images/NRVER GIVE UP.jpg' %}" alt="Home Image">
+
+<form method="POST">
+{% csrf_token %}
+
+<input type="text" name="username"  placeholder="Username">
+<input type="password" name="password"  placeholder="Password">
+<button type="Submit">Login</button>
+</form>
+
+<button onclick="showAlert()">Click Me</button>
+{% endblock  %}
